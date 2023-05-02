@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Car-Tuned.com - Compra e vendi </title>
+    <link rel="shortcut icon"  th:href="@{testimonials/favicon.ico}">
+
+</head>
+<body>
+    <section class="header-v2">
+     <nav>
+      <a th:href="@{/}"><img src="https://www.autoserviceprocar.nl/wp-content/uploads/2022/02/logo_smal.png"></a>
+      <div class="nav-link">
+        <ul>
+            <li><a th:href="@{/}"> Home </a></li>
+            <li><a th:href="@{/aboutus}"> About us </a></li>
+            <li><a th:href="@{/ricerca}"> Ricerca </a></li>
+            <li><a th:href="@{/login}"> Login</a></li>
+        </ul>
+       </div>
+      </nav>
+    </section>
+    <section class="base ">
+        <div class="about-container ">
+            <h1>
+                Su di noi...
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolores sequi incidunt delectus temporibus. Deleniti, non voluptatum. Blanditiis aliquam voluptate quisquam nisi ducimus, consequatur dicta commodi reiciendis odio praesentium similique.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dolorem totam voluptas alias? Nemo dolorum minima laborum sint ratione, voluptatem adipisci doloribus dignissimos enim molestias animi ea sapiente dolor est!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem asperiores ipsa ut incidunt natus dolorem sapiente eligendi error laboriosam adipisci, minus assumenda mollitia tempora vitae odit saepe perferendis reprehenderit neque.
+            </p>
+            <img th:src="@{testimonials/team.webp}" alt="Team">
+            <h2>
+                Contattaci!
+            </h2>
+            <section class="contatti">
+                <p>
+                    email: example@gmail.com <br>
+                    whatsapp: +39 340 272 64 53
+                </p>
+            </section>
+        </div>
+    </section>
+    
+</body>
+</html>

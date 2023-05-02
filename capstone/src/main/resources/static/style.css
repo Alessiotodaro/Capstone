@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+.header {
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(4,9,30,0.7)),url('./assets/e46-1.jpg');
+    background-size: cover;
+    position:static;
+}
+nav{
+    display: flex;
+    padding: 3vh 3vh;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+nav img {
+    width: 100%;
+    
+}
+.nav-link{
+   flex: 1;
+   text-align: right;
+
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    content: none;
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Montserrat, sans-serif;
+    transition: 0.5s;
+}
+.nav-link ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background:#f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+}
+.nav-link ul li a:hover{
+    color: #f44336;
+}
+.my-button {
+    background-color: transparent;
+    border: 10px;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    margin-left: 32px;
+    float: left;
+    line-height: 70px;
+    display: none;
+  }
+.my-button:focus {
+    outline: none;
+  }
+div a{
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+}
+div a:hover{
+    color: rgb(255, 80, 80);
+}
+.text-box {
+    width: 100%;
+    color: #fff;
+    font-family: Montserrat, sans-serif;
+    top: 50%;
+    left: 50%;
+   
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    height: 17vh;
+}
+
+.text-box h1 {
+    font-size: 6vw;
+    margin: 0.2em;
+   
+}
+.text-box p {
+    font-size: 2vw;
+    line-height: 1.5em;
+    margin:  auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.text-box button a {
+    text-decoration: none;
+    color: #fff;
+}
+.caratteristiche{
+    max-width: 100%;
+}
+.Cara-textbox h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.card-container {
+   display: flex;
+   padding: 10px;
+   justify-content: center;
+   
+}
+#card{
+    display: block;
+    width: 280px;
+    background-color: white, ;
+    box-shadow: 0 4px 8px 0 rgba(177, 6, 6, 0.33), 0 6px 20px 0 rgba(177, 6, 6, 0.33);
+    margin: 50px;
+    
+    
+  }
+  
+#card img {
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 280px;
+    min-width: 280px;
+    
+}
+#card-text {
+    text-align: center;
+    padding: 10px 20px;
+   
+  }
+
+#card:hover {
+    box-shadow: 0 4px 8px 0 rgba(7, 189, 221, 0.415), 0 6px 20px 0 rgba(7, 189, 221, 0.415);
+}
+.Recensioni h2{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.home{
+    margin: 0 auto 50px;
+    background-color: rgba(202, 0, 0, 0.56);
+    max-width: 50%;
+    justify-content: center;
+}
+
+/********************************** About US *************************************************/
+
+.header-v2{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    
+}
+.header-v2 nav{
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(35, 35, 35) 100%);
+    min-width: max-content;
+    display: flex;
+    padding: 3vh 3vh;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    
+} 
+.base{
+    background-image: url(assets/E46-1.jpg);
+    width: 100%;
+    height: 100%;
+    
+ }
+.about-container{
+    background-color: rgba(236, 236, 236, 0.93);
+    width: 92%;
+    margin: 0 auto;
+    text-align: center;
+}
+.about-container h1, h2{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    padding-top: 50px;
+}
+.about-container p{
+    font-family: Montserrat, sans-serif;
+    max-width: 80%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.about-container img{
+    margin-top: 40px;
+}
+.contatti p{
+    padding-bottom: 60px;
+    margin-top: 20px;
+}
+
+/********************************** RICERCA *************************************************/
+.ricerca-container{
+    background-color: rgba(236, 236, 236, 0.93);
+    width: 92%;
+    height: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}
+
+.barra-ricerca{
+    background-color: rgb(236, 236, 236);
+    border: 0.1px solid rgba(80, 80, 80, 0.22);
+    width: 90%;
+    margin:0 auto;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/********************************** ANNUNCIO *************************************************/
+.prova img{
+    min-height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+.annuncio:hover{
+    color: #f44336b5;
+}
+@media screen and (max-width: 1100px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+}
